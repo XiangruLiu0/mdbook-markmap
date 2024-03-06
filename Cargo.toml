@@ -1,0 +1,20 @@
+[package]
+name = "mdbook-markmap"
+version = "0.1.0"
+edition = "2021"
+authors = ["Xiangru Liu"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+base64 = "0.22.0"
+clap = { version = "4.5.1", features = ["derive"] }
+md5 = "0.7.0"
+mdbook = "0.4.37"
+regex = "1.10.3"
+semver = "1.0.22"
+serde_json = "1.0.114"
+tempfile = "3.10.1"
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"
