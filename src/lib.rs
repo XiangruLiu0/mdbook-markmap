@@ -71,6 +71,7 @@ impl MarkmapPreprocessor {
         debug!(?output_file, "Creating temporary file for SVG output");
         // Example of calling an external command, replace "markmap-cli" with your actual command
         let output = Command::new("markmap")
+            .arg("--no-open")
             .arg("-o")
             .arg(output_file.path())
             .arg(input_file.path())
