@@ -7,7 +7,7 @@ fn init_tracing() {
     // Initialize tracing here with debug level logging
     let tracing_subscriber = tracing_subscriber::FmtSubscriber::builder()
         .with_writer(std::io::stderr)
-        .with_max_level(tracing::Level::DEBUG)
+        .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
         .finish();
 
     tracing::subscriber::set_global_default(tracing_subscriber)
