@@ -24,7 +24,7 @@ Add the following to your `book.toml`:
 
 Then, in your markdown files, use the following syntax to render a markmap:
 
-```md
+````md
 This is a markmap:
 
 ```markmap
@@ -36,8 +36,9 @@ This is a markmap:
 
 ### Item 2
 ```
+
 The output will be a rendered markmap.
-```md
+````
 
 ## Contributing
 
